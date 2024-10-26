@@ -10,6 +10,8 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     {% include head-custom.html %}
   </head>
   <body>
@@ -28,6 +30,25 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+	<div class="card-deck">
+      {% for social in  page.social %}
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 py-3">
+		  <div class="card h-100">
+				  <div class="card-body">
+						  <img
+								  src="{{ social.pfp }}"
+								  class="card-img-top"
+								  alt="profile picture of {{ social.name }}"
+								  />
+						  <h5 class="card-title">{{ social.name }}</h5>
+				  </div>
+				  <div class="card-footer">
+						  <a href="{{social.url}}" data-mdb-ripple-init class="btn btn-    primary">View Profile</a>
+				  </div>
+		  </div>
+		</div>
+      {% endfor %}
+	</div>
       {{ content }}
 
       <footer class="site-footer">

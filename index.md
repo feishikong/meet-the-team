@@ -1,7 +1,14 @@
 ---
 layout: default
----
 
+social:
+  - url: https://github.com/fuseteam
+    name: Github @fuseteam
+    pfp: assets/images/github.png
+  - url: https://gitlab.com/xiaofuse
+    name: Gitlab @xiaofuse
+    pfp: assets/images/gitlab.png
+---
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
