@@ -31,25 +31,25 @@
 
     <main id="content" class="main-content" role="main">
 	<div class="container">
-	<div class="card-deck">
-      {% for social in  page.social %}
-		<div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0 py-3">
-		  <div class="card h-100">
-				  <div class="card-body">
-						  <img
-								  src="{{ social.pfp }}"
-								  class="card-img-top"
-								  alt="profile picture of {{ social.name }}"
+	  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+        {% for social in  page.social %}
+		<div class="col my-4">
+		  <div class="card">
+				  <img
+						  src="{{ social.pfp }}"
+						  class="card-img-top"
+						  alt="profile picture of {{ social.name }}"
 								  />
+				  <div class="card-body">
 						  <h5 class="card-title">{{ social.name }}</h5>
 				  </div>
 				  <div class="card-footer">
-						  <a href="{{social.url}}" data-mdb-ripple-init class="btn btn-    primary">View Profile</a>
+						  <a href="{{social.url}}" data-mdb-ripple-init class="btn btn-primary">View Profile</a>
 				  </div>
 		  </div>
 		</div>
-      {% endfor %}
-	</div>
+        {% endfor %}
+	  </div>
       {{ content }}
 	</div>
       <footer class="site-footer">
