@@ -145,7 +145,7 @@
 // like a button) with data-bs-target for each slide your carousel holds.
 
 .carousel-indicators {
-  position: absolute;
+  position: unset;
   right: 0;
   bottom: 0;
   left: 0;

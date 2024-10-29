@@ -10,6 +10,7 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     {% include head-custom.html %}
   </head>
   <body>
@@ -30,8 +31,29 @@
     <main id="content" class="main-content" role="main">
 	<div class="container">
 			<h1> {{ page.title }} </h1>
-	<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 py-4 g-4">
+	<div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-bs-target="#profileCarousel" data-bs-slide-to="0" class="progress active">
+					<span class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span>
+			</li>
+			<li data-bs-target="#profileCarousel" data-bs-slide-to="1" class="progress">
+					<span class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span>
+			</li>
+			<li data-bs-target="#profileCarousel" data-bs-slide-to="2" class="progress">
+					<span class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span>
+			</li>
+		</ol>
+	<div class="carousel-inner">
       {% for social in  page.social %}
+	{% assign remainder = forloop.index | modulo: 12 %}
+	{% if remainder == 1 %}
+	  {% if forloop.first %}
+          <div class="carousel-item active">
+	  {% else %}
+	  <div class="carousel-item">
+	  {% endif %}
+	  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 py-4 g-4">
+        {% endif %}
 		<div class="col">
 		  <div class="card h-100">
 				  <div class="card-body">
@@ -47,7 +69,13 @@
 				  </div>
 		  </div>
 		</div>
+	{% assign remainder = forloop.index | modulo: 12 %}
+	{% if remainder == 0 %}
+	    </div>
+	  </div>
+	{% endif %}
       {% endfor %}
+	</div>
 	</div>
       {{ content }}
 	</div>

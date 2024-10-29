@@ -3,3 +3,10 @@
 // Then using this theme with jekyll-remote-theme will work fine.
 @import "jekyll-theme-cayman";
 @import "bootstrap/bootstrap";
+.progress-bar {
+  width: 0%;
+}
+
+.active .progress-bar {
+  width: 100%;
+}
