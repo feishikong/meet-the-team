@@ -1,6 +1,7 @@
 ---
 layout: default
 
+title: "Social"
 social:
   - url: https://github.com/fuseteam
     name: Github @fuseteam
