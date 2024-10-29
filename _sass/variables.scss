@@ -1,6 +1,10 @@
 // Breakpoints
-$large-breakpoint: 64em !default;
-$medium-breakpoint: 42em !default;
+$extra-small-breakpoint: 0 !default;
+$small-breakpoint: 576px !default;
+$medium-breakpoint: 768px !default;
+$large-breakpoint: 992px !default;
+$extra-large-breakpoint: 1200px !default;
+$extra-extra-large-breakpoint: 1400px !default;
 
 //color definition
 $primary: #082 !default;
@@ -11,10 +15,15 @@ $header-heading-color: #fff !default;
 $header-bg-color: $primary;
 $header-bg-color-secondary: $secondary !default;
 
+// Buttons
+$input-btn-padding-y: 0.75rem !default;
+$input-btn-padding-x: 1rem !default;
 // Text
 $section-headings-color: $primary !default;
 $body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-decoration: underline !default;
 $blockquote-text-color: #819198 !default;
 
 // Code
@@ -24,4 +33,5 @@ $code-text-color: #567482 !default;
 // Borders
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
+$hr-opacity: 1 !default;
 $hr-border-color: #eff0f1 !default;
