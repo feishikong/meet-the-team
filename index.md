@@ -1,8 +1,38 @@
 ---
 layout: default
 
-title: "Social"
+title: "Card Grid"
 social:
+  - url: https://github.com/fuseteam
+    name: Github @fuseteam
+    pfp: assets/images/github.png
+  - url: https://gitlab.com/xiaofuse
+    name: Gitlab @xiaofuse
+    pfp: assets/images/gitlab.png
+  - url: https://github.com/fuseteam
+    name: Github @fuseteam
+    pfp: assets/images/github.png
+  - url: https://gitlab.com/xiaofuse
+    name: Gitlab @xiaofuse
+    pfp: assets/images/gitlab.png
+  - url: https://github.com/fuseteam
+    name: Github @fuseteam
+    pfp: assets/images/github.png
+  - url: https://gitlab.com/xiaofuse
+    name: Gitlab @xiaofuse
+    pfp: assets/images/gitlab.png
+  - url: https://github.com/fuseteam
+    name: Github @fuseteam
+    pfp: assets/images/github.png
+  - url: https://gitlab.com/xiaofuse
+    name: Gitlab @xiaofuse
+    pfp: assets/images/gitlab.png
+  - url: https://github.com/fuseteam
+    name: Github @fuseteam
+    pfp: assets/images/github.png
+  - url: https://gitlab.com/xiaofuse
+    name: Gitlab @xiaofuse
+    pfp: assets/images/gitlab.png
   - url: https://github.com/fuseteam
     name: Github @fuseteam
     pfp: assets/images/github.png
