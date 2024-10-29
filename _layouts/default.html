@@ -70,7 +70,7 @@
 		  </div>
 		</div>
 	{% assign remainder = forloop.index | modulo: 12 %}
-	{% if remainder == 0 %}
+	{% if remainder == 0 or forloop.last %}
 	    </div>
 	  </div>
 	{% endif %}
