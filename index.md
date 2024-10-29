@@ -40,6 +40,8 @@ social:
     name: Gitlab @xiaofuse
     pfp: assets/images/gitlab.png
 ---
+# Markdown
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
