@@ -3,6 +3,7 @@
 // Then using this theme with jekyll-remote-theme will work fine.
 @import "jekyll-theme-cayman";
 @import "bootstrap/bootstrap";
+
 .progress-bar {
   width: 0%;
 }
@@ -15,6 +16,7 @@
 				width: 100%;
 		}
 }
+
 .active .progress-bar {
   animation-name: progress-indicator;
   animation-timing-function: ease;
