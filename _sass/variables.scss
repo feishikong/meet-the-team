@@ -6,6 +6,9 @@ $large-breakpoint: 992px !default;
 $extra-large-breakpoint: 1200px !default;
 $extra-extra-large-breakpoint: 1400px !default;
 
+// Dark Mode
+$color-mode-type: media-query;
+
 //color definition
 $primary: #082 !default;
 $secondary: #a7a8a9 !default;
