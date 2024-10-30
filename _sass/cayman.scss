@@ -7,6 +7,17 @@
   width: 0%;
 }
 
+@keyframes progress-indicator {
+		0% {
+				width: 0%;
+		}
+		100% {
+				width: 100%;
+		}
+}
 .active .progress-bar {
+  animation-name: progress-indicator;
+  animation-timing-function: ease;
+  animation-duration: 6s;
   width: 100%;
 }
